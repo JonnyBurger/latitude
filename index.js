@@ -10,6 +10,7 @@ module.exports = function () {
 			if (data.stderr.length) {
 				throw new Error(data.stderr);
 			}
+			console.log(data.stdout);
 			const result = JSON.parse(data.stdout);
 			if (result.success) {
 				resolve(result.location);
