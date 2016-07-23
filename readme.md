@@ -1,7 +1,8 @@
 # latitude [![Build Status](https://travis-ci.org/JonnyBurger/latitude.svg?branch=master)](https://travis-ci.org/JonnyBurger/latitude)
 
-> My super module
+> Get location info (macOS)
 
+![GIF](https://thumbs.gfycat.com/ClearLimitedIberianmole-size_restricted.gif)
 
 ## Install
 
@@ -47,19 +48,7 @@ $ npm install --global latitude
 ```
 
 ```
-$ latitude --help
-
-  Usage
-    latitude [input]
-
-  Options
-    --foo  Lorem ipsum. [Default: false]
-
-  Examples
-    $ latitude
-    unicorns & rainbows
-    $ latitude ponies
-    ponies & rainbows
+$ latitude
 ```
 
 
