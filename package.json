@@ -10,7 +10,7 @@
     "url": "jonny.io"
   },
   "bin": {
-    "location": "cli.js",
+    "latitude": "cli.js",
     "whereami": "bin/whereami"
   },
   "engines": {
