@@ -7,7 +7,7 @@
 ## Install
 
 ```
-$ npm install --g latitude
+$ npm install -g latitude
 ```
 
 to use it as a CLI tool.
@@ -25,12 +25,12 @@ const latitude = require('latitude');
 
 latitude()
 .then(location => {
-	/* {
-		latitude: 47.06367550072804,
-  		longitude: 8.28075766132394,
-  		accuracy: 65,
-		altitude: 447.5973815917969
-	} */
+	/*
+		{latitude: 47.06367550072804,
+		longitude: 8.28075766132394,
+		accuracy: 65,
+		altitude: 447.5973815917969}
+	*/
 })
 .catch(err => {
 	// error description
