@@ -1,12 +1,21 @@
 'use strict';
 
+const fs = require('fs');
 const execa = require('execa');
 const co = require('co');
 
 module.exports = function () {
 	return new Promise(function (resolve, reject) {
 		co(function *() {
-			let data = yield execa('whereami');
+			var bin;
+			try {
+				if (fs.statSync('bin/whereami')) {
+					bin = 'bin/whereami';
+				}
+			} catch (e) {
+				bin = 'whereami';
+			}
+			let data = yield execa(bin);
 			if (data.stderr.length) {
 				throw new Error(data.stderr);
 			}
