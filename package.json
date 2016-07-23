@@ -9,7 +9,10 @@
     "email": "jonathanburger11@gmail.com",
     "url": "jonny.io"
   },
-  "bin": "cli.js",
+  "bin": {
+    "location": "cli.js",
+    "whereami": "bin/whereami"
+  },
   "engines": {
     "node": ">4.0"
   },
@@ -20,7 +23,7 @@
   "files": [
     "index.js",
     "cli.js",
-    "fetcher"
+    "bin/whereami"
   ],
   "keywords": [
     "cli-app",
