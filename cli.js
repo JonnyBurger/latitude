@@ -36,7 +36,7 @@ latitude()
 });
 
 function renderStat(emoji, name, value, unit) {
-	const precision = unit == 'meters' ? 10 : 1000000000
+	const precision = unit === 'meters' ? 10 : 1000000000;
 	const shortened = Math.round(value * precision) / precision;
 	return `${emoji}  ${chalk.blue(name)} ${leftPad(shortened, 28 - name.length)} ${chalk.gray(unit)}`;
 }

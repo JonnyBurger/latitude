@@ -20,8 +20,7 @@ module.exports = function () {
 		.catch(err => {
 			try {
 				reject(JSON.parse(err.stdout).error);
-			}
-			catch (e) {
+			} catch (e) {
 				reject(e);
 			}
 		});
